@@ -1,5 +1,6 @@
 :root {
   --nav-item-bg: #616161;
+  --side-bar-higet: 260px;
 }
 
 * {
@@ -10,7 +11,7 @@
 
 .page {
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   background: center center/cover;
 }
 
@@ -20,6 +21,31 @@ a {
 
 li {
   list-style: none;
+}
+
+/* side bar */
+#side-navbar {
+  position: fixed;
+  height: var(--side-bar-higet);
+  /* height: 300px; */
+  top: calc(50vh - var(--side-bar-higet) / 2);
+
+  padding-left: 15px;
+  font-family: 'Gotham SSm', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 500;
+  color: white;
+}
+
+.side-nav-item {
+  border-left: rgba(150, 150, 150, 0.3) 2px solid;
+  margin: 2px;
+  padding: 4px;
+  color: rgba(255, 255, 255, 0);
+}
+.side-nav-item:hover {
+  color: #fff;
+  border-left-color: rgba(255, 255, 255, 1);
 }
 
 /* header ====== page 1 */
@@ -37,6 +63,8 @@ li {
   justify-content: space-between;
   align-items: center;
   align-content: center;
+  position: sticky;
+  top: 0;
 }
 
 .top-navbar-logo {
@@ -90,4 +118,16 @@ f
 
 .top-nav-item {
   background-color: aquamarine;
+} */
+
+body {
+  height: 250vh;
+}
+
+/* #side-navbar {
+  background-color: #616161;
+} */
+
+/* #side-navbar li {
+  background-color: rgb(238, 203, 65);
 } */
