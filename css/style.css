@@ -7,6 +7,7 @@
   padding: 0%;
   margin: 0%;
   box-sizing: border-box;
+  font-family: var(--FONTS-main-font);
 }
 
 .page {
@@ -23,16 +24,64 @@ li {
   list-style: none;
 }
 
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.light-font {
+  color: var(--COLOR-white);
+}
+
+.dark-font {
+  color: var(--COLOR-dark);
+}
+
+.btn {
+  font-size: 14px;
+  width: 100%;
+  color: var(--COLOR-dark);
+  border: 3px solid var(--COLOR-dark);
+  border-radius: 40px;
+  padding: 7px 0;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: var(--COLOR-dark);
+  color: var(--COLOR-white);
+}
+
+.btn-lighet {
+  color: var(--COLOR-white);
+  border-color: var(--COLOR-white);
+}
+
+.btn-lighet:hover {
+  color: var(--COLOR-dark);
+  background-color: var(--COLOR-white);
+}
+
 /* side bar */
 #side-navbar {
   position: fixed;
   height: var(--side-bar-higet);
-  /* height: 300px; */
+
   top: calc(50vh - var(--side-bar-higet) / 2);
 
   padding-left: 15px;
-  font-family: 'Gotham SSm', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
+
   font-weight: 500;
   color: white;
 }
@@ -48,11 +97,20 @@ li {
   border-left-color: rgba(255, 255, 255, 1);
 }
 
+@media screen and (max-width: 900px) {
+  #side-navbar {
+    display: none;
+  }
+}
+
 /* header ====== page 1 */
 
 #the-header {
   background: url('https://tesla-cdn.thron.com/delivery/public/image/tesla/d0cecbbf-1a20-4b48-b136-fb096af19515/bvlatuR/std/2880x1800/model-3-main-hero-a-desktop')
     center center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 #top-navbar {
@@ -73,8 +131,7 @@ li {
 }
 
 .top-nav-item {
-  font-family: 'Gotham SSm', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-family: var(--FONTS-main-font);
   font-weight: 500;
   font-size: 15px;
   padding: 4px 16px;
@@ -104,6 +161,55 @@ li {
   }
 }
 
+#the-header h1 {
+  font-size: 40px;
+  text-align: center;
+  color: var(--COLOR-white);
+  padding-top: 20px;
+}
+
+.speed-svg.white {
+  color: var(--COLOR-white);
+  background: green;
+  color: green;
+  fill: green;
+}
+
+.speen-info {
+  height: 54px;
+  max-width: 800px;
+  margin: auto;
+  margin-bottom: 80px;
+  justify-content: space-between;
+}
+
+.speed-info-item {
+  height: 100%;
+  width: 20%;
+}
+
+.speed-info-sub-item {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.speed-info-sub-item > img {
+  width: 30px;
+  display: inline-block;
+}
+
+.speed-info-sub-item-u {
+  font-size: 28px;
+}
+
+.speed-info-sub-item-d {
+  font-size: 12px;
+}
+
+/* 
+ */
+
 /* 
 
 f
@@ -130,4 +236,24 @@ body {
 
 /* #side-navbar li {
   background-color: rgb(238, 203, 65);
+} */
+
+/* .header-bottom-container {
+  background-color: rgb(168, 32, 32);
+  opacity: 0.8;
+}
+
+.speen-info {
+  background-color: green;
+}
+.speed-info-item {
+  border: 1px dashed salmon;
+}
+.speed-info-sub-item {
+  border: 2px dashed yellow;
+} */
+
+/* .row,
+.column {
+  border: 1px dashed salmon;
 } */
