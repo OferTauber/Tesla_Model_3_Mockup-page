@@ -9,6 +9,9 @@
   box-sizing: border-box;
   font-family: var(--FONTS-main-font);
 }
+html {
+  scroll-behavior: smooth;
+}
 
 .page {
   height: 100vh;
@@ -73,6 +76,10 @@ li {
   background-color: var(--COLOR-white);
 }
 
+.underline {
+  text-decoration: underline;
+}
+
 /* side bar */
 #side-navbar {
   position: fixed;
@@ -101,6 +108,18 @@ li {
   #side-navbar {
     display: none;
   }
+}
+
+#fixed-item {
+  height: 50px;
+  width: 50px;
+  background-color: var(--COLOR-white);
+  border-radius: 50%;
+  position: fixed;
+  bottom: 80px;
+  right: 50px;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 1px 4px 0px;
 }
 
 /* header ====== page 1 */
@@ -183,6 +202,20 @@ li {
   justify-content: space-between;
 }
 
+@media screen and (max-width: 770px) {
+  .header-bottom-container .speen-info {
+    flex-wrap: wrap !important;
+    background-color: blueviolet;
+    max-width: 500px;
+  }
+  #order-now {
+    width: 100%;
+    min-width: 300px;
+    width: 100%;
+    background-color: aqua;
+  }
+}
+
 .speed-info-item {
   height: 100%;
   width: 20%;
@@ -207,8 +240,89 @@ li {
   font-size: 12px;
 }
 
+/* safty page */
+#safty {
+  display: flex;
+}
+
+.img-section {
+  height: 100%;
+  flex-basis: 70%;
+}
+.data-section {
+  height: 100%;
+  flex-basis: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.data-section h3 {
+  color: var(--COLOR-gray);
+  font-weight: 200;
+}
+.data-section h2 {
+  padding-top: 0;
+  padding-bottom: 40px;
+  color: var(--COLOR-gray);
+  font-weight: 500;
+  padding-top: 10px;
+}
+
+.data-section p {
+  color: var(--COLOR-gray);
+}
+
+.data-section .buttens {
+  width: 100%;
+  /* background-color: antiquewhite; */
+}
+
+.data-section .buttens span {
+  padding-right: 30px;
+}
+
+.btn-round {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  line-height: 20px;
+  text-align: center;
+  font-size: x-large;
+  color: var(--COLOR-light-gray);
+  border-color: var(--COLOR-light-gray);
+}
+.data-section .buttens span:hover a {
+  background-color: var(--COLOR-light-gray);
+  color: var(--COLOR-white);
+}
+
+.data-section .btn-light {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+#safty .img-section {
+  background: url('https://tesla-cdn.thron.com/delivery/public/image/tesla/ea753653-02a2-4206-aac5-82a33a0a245d/bvlatuR/std/2880x1800/model-3-hero-a-desktop')
+    center center/contain no-repeat;
+}
+/* #the-header .speed-info-item {
+  width: 30%;
+}
+#order-now {
+  width: 300px;
+} */
+
+/* .fa-angle-down {
+  margin: auto;
+  height: 50px;
+  width: 50px;
+  background-color: #616161;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+} */
 /* 
- */
+*/
 
 /* 
 
@@ -229,6 +343,9 @@ f
 body {
   height: 250vh;
 }
+/* #safty .data-section {
+  background-color: peru;
+} */
 
 /* #side-navbar {
   background-color: #616161;
@@ -256,4 +373,8 @@ body {
 /* .row,
 .column {
   border: 1px dashed salmon;
+} */
+
+/* #safty {
+  background-color: aquamarine;
 } */

@@ -1,4 +1,6 @@
 :root {
   --COLOR-white: white;
   --COLOR-dark: #393c41;
+  --COLOR-gray: #171a20;
+  --COLOR-light-gray: rgb(57, 60, 65);
 }
