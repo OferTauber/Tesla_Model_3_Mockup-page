@@ -200,6 +200,7 @@ li {
   margin: auto;
   margin-bottom: 80px;
   justify-content: space-between;
+  color: var(--COLOR-white);
 }
 
 @media screen and (max-width: 770px) {
@@ -349,10 +350,73 @@ li {
     center center/contain no-repeat;
 }
 
-#safty .img-section {
-  /* background-color: aqua; */
+.page-even {
+  display: flex;
+  flex-direction: column;
 }
 
+.page-even .img-section {
+  flex-basis: 60%;
+}
+
+/* .page-even .speed-info .speed-info-sub-item-u img { */
+.speed-info-sub-item > img {
+  width: 50px;
+}
+
+.page-even .data-section {
+  flex-basis: 40%;
+  display: flex;
+  justify-content: center;
+}
+
+.page-even .speen-info {
+  margin-top: 22%;
+  max-width: 800px;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.page-even .speen-info .speed-info-item {
+  width: fit-content;
+  height: fit-content;
+  text-align: center;
+}
+
+@media screen and (max-width: 950px) {
+  .page-even .speed-info-sub-item-d {
+    display: none;
+  }
+  .page-even .speen-info {
+    width: 80%;
+  }
+}
+
+.page-even .data-section .data-l {
+  flex-basis: 350px;
+  flex-shrink: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.page-even .data-section .data-l .order-now {
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-left: 10px;
+}
+.page-even .data-section .data-r {
+  flex-basis: 55%;
+}
+
+.page-even .data-section .data-r p {
+  font-size: 14px;
+  padding: 16px;
+}
+
+#preformance .img-section {
+  background: url('https://tesla-cdn.thron.com/delivery/public/image/tesla/3489a82e-b19c-457a-86a4-7ea9ac91aa1c/bvlatuR/std/1920x1080/lhd-performance-hero-desktop')
+    center center/cover;
+}
 /* #the-header .speed-info-item {
   width: 30%;
 }
@@ -387,9 +451,6 @@ f
   background-color: aquamarine;
 } */
 
-body {
-  height: 250vh;
-}
 /* #safty .data-section {
   background-color: peru;
 } */
@@ -424,4 +485,35 @@ body {
 
 /* #safty {
   background-color: aquamarine;
+} */
+/* 
+#preformance {
+  background-color: tan;
+}
+
+.page-even .img-section {
+  background-color: sandybrown;
+}
+
+.page-even .data-section {
+  background-color: yellowgreen;
+}
+
+.page-even .speen-info {
+  background-color: crimson;
+}
+
+.page-even .data-l {
+  border: 1px darkblue dotted;
+}
+.page-even .data-r {
+  border: 2px pink dotted;
+}
+
+.headline {
+  background-color: khaki;
+}
+
+.page-even .buttens {
+  background-color: hotpink;
 } */
