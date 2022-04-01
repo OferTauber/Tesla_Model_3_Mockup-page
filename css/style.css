@@ -113,6 +113,8 @@ li {
 #fixed-item {
   height: 50px;
   width: 50px;
+  padding: 12px 16px;
+  font-size: x-large;
   background-color: var(--COLOR-white);
   border-radius: 50%;
   position: fixed;
@@ -185,6 +187,7 @@ li {
   text-align: center;
   color: var(--COLOR-white);
   padding-top: 20px;
+  font-weight: 500;
 }
 
 .speed-svg.white {
@@ -194,7 +197,7 @@ li {
   fill: green;
 }
 
-.speen-info {
+.speed-info {
   height: 54px;
   max-width: 800px;
   margin: auto;
@@ -204,7 +207,7 @@ li {
 }
 
 @media screen and (max-width: 770px) {
-  .header-bottom-container .speen-info {
+  .header-bottom-container .speed-info {
     flex-wrap: wrap !important;
     background-color: blueviolet;
     max-width: 500px;
@@ -251,27 +254,35 @@ li {
   flex-basis: 70%;
 }
 .page-odd .data-section {
+  padding-left: 20px;
   height: 100%;
   flex-basis: 30%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
-.page-odd .data-section h3 {
+.page .data-section h3,
+a {
   color: var(--COLOR-gray);
-  font-weight: 200;
+  font-weight: 300;
 }
-.page-odd .data-section h2 {
+.page .data-section h2 {
   padding-top: 0;
   padding-bottom: 40px;
-  color: var(--COLOR-gray);
+  color: var(--COLOR-dark);
   font-weight: 500;
   padding-top: 10px;
 }
 
-.page-odd .data-section p {
+.page .data-section p,
+a {
   color: var(--COLOR-gray);
+  font-family: Gotham-l;
+}
+
+.page .data-section p {
+  margin-bottom: 8px;
 }
 
 .page-odd .data-section .buttens {
@@ -370,13 +381,13 @@ li {
   justify-content: center;
 }
 
-.page-even .speen-info {
+.page-even .speed-info {
   margin-top: 22%;
   max-width: 800px;
   align-items: flex-start;
   justify-content: space-between;
 }
-.page-even .speen-info .speed-info-item {
+.page-even .speed-info .speed-info-item {
   width: fit-content;
   height: fit-content;
   text-align: center;
@@ -386,7 +397,7 @@ li {
   .page-even .speed-info-sub-item-d {
     display: none;
   }
-  .page-even .speen-info {
+  .page-even .speed-info {
     width: 80%;
   }
 }
@@ -411,6 +422,7 @@ li {
 }
 
 .page-even .data-section .data-r {
+  padding-top: 20px;
   flex-basis: 55%;
   align-items: center;
 }
@@ -448,6 +460,18 @@ li {
 #range .img-section {
   background: url('https://tesla-cdn.thron.com/delivery/public/image/tesla/b2b118a7-7e86-4e8f-b7af-092f3e64d847/bvlatuR/std/1254x1080/lhd-range-hero-desktop')
     center center/cover;
+}
+
+#range .speed-info {
+  margin-top: 50%;
+  max-width: 80%;
+}
+
+@media screen and (max-width: 1250) {
+  #range .speed-info {
+    margin-top: 100px;
+    max-width: 80%;
+  }
 }
 
 /* #the-header .speed-info-item {
@@ -501,7 +525,7 @@ f
   opacity: 0.8;
 }
 
-.speen-info {
+.speed-info {
   background-color: green;
 }
 .speed-info-item {
@@ -532,7 +556,7 @@ f
   background-color: yellowgreen;
 }
 
-.page-even .speen-info {
+.page-even .speed-info {
   background-color: crimson;
 }
 

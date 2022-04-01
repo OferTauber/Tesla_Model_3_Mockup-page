@@ -6,3 +6,8 @@
   font-family: Gotham;
   src: url(/props/fonts/Gotham-Font/GothamMedium_1.ttf);
 }
+
+@font-face {
+  font-family: Gotham-l;
+  src: url(/props/fonts/Gotham-Font/GothamLight.ttf);
+}
