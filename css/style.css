@@ -166,6 +166,27 @@ li {
   background: var(--nav-item-bg);
 }
 
+.top-nav-item::after {
+  content: attr(data-tooltip);
+  height: fit-content;
+  width: fit-content;
+  background-color: var(--COLOR-white);
+  color: var(--COLOR-dark);
+  padding: 3px;
+  border: 1px solid rgb(121, 121, 121);
+  position: absolute;
+  font-size: small;
+  top: 20px;
+  left: 0;
+  opacity: 0;
+}
+
+.top-nav-item:hover::after {
+  transition-property: opacity;
+  transition-delay: 1s;
+  opacity: 1;
+}
+
 @media screen and (max-width: 1200px) {
   .main-top-navbar {
     display: none;
@@ -201,7 +222,6 @@ li {
   width: 80%;
   margin: auto;
   display: flex;
-  /* background-color: antiquewhite; */
   justify-content: flex-start;
 }
 
@@ -498,104 +518,3 @@ a {
     max-width: 80%;
   }
 }
-
-/* #the-header .speed-info-item {
-  width: 30%;
-}
-#order-now {
-  width: 300px;
-} */
-
-/* .fa-angle-down {
-  margin: auto;
-  height: 50px;
-  width: 50px;
-  background-color: #616161;
-  color: white;
-  font-family: 'Courier New', Courier, monospace;
-} */
-/* 
-*/
-
-/* 
-
-f
-f
-f
-f
-f
-*/
-/* #top-navbar {
-  background-color: gold;
-}
-
-.top-nav-item {
-  background-color: aquamarine;
-} */
-
-/* #safty .data-section {
-  background-color: peru;
-} */
-
-/* #side-navbar {
-  background-color: #616161;
-} */
-
-/* #side-navbar li {
-  background-color: rgb(238, 203, 65);
-} */
-
-/* .header-bottom-container {
-  background-color: rgb(168, 32, 32);
-  opacity: 0.8;
-}
-
-.speed-info {
-  background-color: green;
-}
-.speed-info-item {
-  border: 1px dashed salmon;
-}
-.speed-info-sub-item {
-  border: 2px dashed yellow;
-} */
-
-/* .row,
-.column {
-  border: 1px dashed salmon;
-} */
-
-/* #safty {
-  background-color: aquamarine;
-} */
-/* 
-#preformance {
-  background-color: tan;
-}
-
-.page-even .img-section {
-  background-color: sandybrown;
-}
-
-.page-even .data-section {
-  background-color: yellowgreen;
-}
-
-.page-even .speed-info {
-  background-color: crimson;
-}
-
-.page-even .data-l {
-  border: 1px darkblue dotted;
-}
-.page-even .data-r {
-  border: 2px pink dotted;
-}
-
-.headline {
-  background-color: khaki;
-}
-
-.page-even .buttens {
-  background-color: hotpink;
-} */
