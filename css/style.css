@@ -134,6 +134,13 @@ li {
   justify-content: space-between;
 }
 
+@media screen and (max-width: 1000px) {
+  #the-header {
+    background: url('https://tesla-cdn.thron.com/delivery/public/image/tesla/18f3ec61-b1e8-4236-be70-120a6fffaf36/bvlatuR/std/800x1700/model-3-main-hero-a-mobile')
+      center center/cover;
+  }
+}
+
 #top-navbar {
   width: 100%;
   height: 56px;
